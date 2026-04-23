@@ -3,50 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+    <title>Sunrisers Hyderabad Fan Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 15px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7b00, #ffb347);
+            color: white;
             text-align: center;
         }
-        main {
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
         }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            padding: 30px;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
         button {
-            padding: 10px 15px;
-            background: #007BFF;
-            color: white;
+            padding: 12px 20px;
             border: none;
+            background-color: #000;
+            color: #ffb347;
+            font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
         }
         button:hover {
-            background: #0056b3;
+            background-color: #222;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Website</h1>
+    <h1>🧡 Sunrisers Hyderabad 🧡</h1>
+    <p>Rise with the Orange Army!</p>
 </header>
 
 <main>
-    <p>This is a simple HTML page with a button.</p>
-    <button onclick="showMessage()">Click Me</button>
-    <p id="output"></p>
+    <div class="card">
+        <h2>About SRH</h2>
+        <p>
+            Sunrisers Hyderabad (SRH) is a popular IPL team known for its strong bowling attack
+            and passionate fan base called the Orange Army.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Cheer Message</h2>
+        <button onclick="cheer()">Click to Cheer!</button>
+        <p id="message"></p>
+    </div>
 </main>
 
 <script>
-    function showMessage() {
-        document.getElementById("output").innerText = "Hello! You clicked the button.";
+    function cheer() {
+        document.getElementById("message").innerText = "🔥 Go SRH! Orange Army Forever! 🔥";
     }
 </script>
 
